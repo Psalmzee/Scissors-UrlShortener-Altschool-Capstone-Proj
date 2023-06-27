@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= page_title %></title>
+    <link rel="stylesheet" href="/css/custom-url.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>URL Shortener</h2>
+        <ul>
+          <li><a href="https://sci-app.onrender.com">Home</a></li>
+          <li><a href="https://sci-app.onrender.com/custom-url">Custom URL</a></li>
+          <li><a href="https://sci-app.onrender.com/random-url">Random URL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Random URL Shortener</h1>
+    <main>
+      <form action="/short-url" method="post">
+        <div class="input-group">
+          <div class="long-url">
+            <label for="url">Enter Long URL:</label>
+            <input type="text" id="url" name="longUrl" placeholder="https://google.com" />
+          </div>
+        </div>
+        <div class="btns">
+          <button>Generate URL</button>
+          <!-- <button>Fetch URLS</button> -->
+        </div>
+      </form>
+    </main>
+    <p>Here's your link: <a href="<%= display_url %>" target="_blank"><%= display_url %></a></p>
+    <div class="qrcode">
+      <img src="<%= data %>" alt="QR Code" />
+    </div>
+  </body>
+</html>

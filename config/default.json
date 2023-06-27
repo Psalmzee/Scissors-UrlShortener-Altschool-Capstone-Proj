@@ -1,0 +1,10 @@
+{
+  "PORT": 4000,
+  "REDIS_PORT": 11656,
+  "REDIS_PASSWORD": "6ibhDnSfgZByBg04CskXVQekFLz51QpA",
+  "REDIS_USERNAME": "default",
+  "REDIS_HOST": "redis-11656.c57.us-east-1-4.ec2.cloud.redislabs.com",
+  "MONGO_URI": "mongodb+srv://aniebietafia:e4p5xFDb1QxqKFoz@cluster0.zqmiakf.mongodb.net/?retryWrites=true&w=majority",
+  "dbName": "url-shortener",
+  "baseUrl": "http://localhost:4000"
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= page_title %></title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="left">
+      <h1>Scissors URL Shortener</h1>
+      <div>
+        <a href="https://sci-app.onrender.com/random-url">Random URL Shortener</a>
+        <a href="https://sci-app.onrender.com/custom-url">Custom URL Shortener</a>
+        <a href="https://sci-app.onrender.com/fetch-urls">Fetch Analytics</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Analytics</h2>
+      <table>
+        <tr>
+          <td>Short Url</td>
+          <td>Views</td>
+        </tr>
+        <% for (const url of urls) {%>
+        <tr>
+          <td><a href="<%= url.shortUrl %>" target="_blank"><%= url.shortUrl %></a></td>
+          <td><%= url.visits %></td>
+        </tr>
+        <%} %>
+      </table>
+    </div>
+  </body>
+</html>

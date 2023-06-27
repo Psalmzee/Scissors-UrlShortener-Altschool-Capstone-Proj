@@ -1,5 +1,5 @@
 {
-  "name": "scissors-project-altschool",
+  "name": "scissors-url-shortener-altschool-capstone-project",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "start": "node src/server.js"
   },
   "keywords": [],
-  "author": "Aniebiet Afia",
+  "author": "Samson Okeji",
   "license": "MIT",
   "dependencies": {
     "config": "^3.3.9",
